@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="qq,email,mail,qqemail,qq邮箱,邮箱">
+    <meta name="description"
+        content="QQ邮箱，为亿万用户提供高效稳定便捷的电子邮件服务。你可以在电脑网页、iOS/iPad客户端、及Android客户端上使用它，通过邮件发送3G的超大附件，体验文件中转站、日历、记事本、漂流瓶等特色功能。QQ邮箱，常联系">
+    <title>登录QQ邮箱</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "lucida Grande", Verdana, "Microsoft YaHei";
+        }
+
+        header {
+            background-color: #EFF4FA;
+            height: 62px;
+            border-bottom: solid 1px rgb(192, 212, 231);
+        }
+
+        main {
+            height: 650px;
+        }
+
+        .logo {
+            padding-top: 14px;
+            padding-left: 20px;
+        }
+
+        .logo img {
+            width: 180px;
+            height: 37px;
+        }
+
+        .nav,
+        footer div {
+            font-size: x-small;
+            float: right;
+            list-style: none;
+
+        }
+
+        .nav {
+            padding-top: 8px;
+            padding-right: 35px;
+        }
+
+        .line {
+            color: rgb(192, 212, 231);
+        }
+
+        .option:link,
+        footer .a:link {
+            color: #1D5494;
+            text-decoration: none;
+        }
+
+        .option:hover,
+        footer .a:hover,
+        .forget:hover,
+        .signup:hover {
+            color: #1D5494;
+            text-decoration: underline;
+        }
+
+        #word {
+            padding-left: 250px;
+            padding-top: 110px;
+            /* border:solid; */
+        }
+
+        .h1 {
+            font-size: x-large;
+            color: rgb(111, 149, 200);
+        }
+
+        #content {
+            padding-top: 12px;
+        }
+
+        #content p {
+            padding-bottom: 5px;
+            font-size: 14px;
+        }
+
+        #content p span {
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .from {
+            font-size: small;
+            padding-top: 10px;
+            font-size: 12px;
+        }
+
+        .picture>img {
+            width: 300px;
+            position: relative;
+            bottom: 120px;
+            left: 500px;
+        }
+
+        .inputframe {
+            position: relative;
+            bottom: 470px;
+            left: 900px;
+            height: 387px;
+            width: 334px;
+            border-bottom: solid #A0B1C4 1px;
+            border-left: solid #A0B1C4 1px;
+            border-right: solid #A0B1C4 1px;
+            border-radius: 2%;
+        }
+
+        .inputframe .head {
+            height: 50px;
+            width: 334px;
+            border-bottom: solid #A0B1C4 1px;
+            border-top: solid #A0B1C4 1px;
+            border-radius: 6px 6px 0 0;
+            background-color: #F9FBFE;
+        }
+
+        .wx {
+            float: left;
+            line-height: 50px;
+            text-align: center;
+            width: 167px;
+            height: 50px;
+
+        }
+
+
+        .qq {
+            float: left;
+            line-height: 50px;
+            text-align: center;
+            width: 167px;
+            height: 50px;
+        }
+
+        .wx .a,
+        .qq .a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .input .frame1 {
+            color: #A0B1C4;
+            width: 270px;
+            height: 30px;
+            position: relative;
+            left: 30px;
+            top: 20px;
+        }
+
+        .input .frame2 {
+            width: 270px;
+            height: 30px;
+            position: relative;
+            left: 30px;
+            top: 50px;
+        }
+
+        .inputframe .option {
+            position: relative;
+            top: 35px;
+            left: 10px;
+        }
+
+        #boxcaption {
+            font-size: smaller;
+            color: #333;
+        }
+
+        #boxcaption:hover {
+            font-size: smaller;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .submit {
+            background-color: #5A98DE;
+            border-radius: 6px 6px 6px 6px;
+            border: solid;
+            width: 270px;
+            height: 38px;
+            position: relative;
+            top: 120px;
+            left: 30px;
+            color: rgb(255, 255, 255);
+            font-size: large;
+            text-align: center;
+            line-height: 38px;
+        }
+
+        .submit:hover {
+            background-color: #7eade2;
+            border-radius: 6px 6px 6px 6px;
+            border: solid;
+            width: 270px;
+            height: 38px;
+            position: relative;
+            top: 120px;
+            left: 30px;
+            color: rgb(255, 255, 255);
+            font-size: large;
+            text-align: center;
+            line-height: 38px;
+        }
+
+        .scan {
+            position: absolute;
+            left: 125px;
+            top: 300px;
+            color: #225592;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .forget {
+            width: 167px;
+            height: 50px;
+            position: relative;
+            top: 175px;
+            left: 20px;
+        }
+
+        .signup {
+            width: 167px;
+            height: 50px;
+            position: relative;
+            top: 125px;
+            left: 250px;
+        }
+
+        footer {
+            background-color: #EFF4FA;
+            height: 39px;
+            border-top: solid 1px rgb(192, 212, 231);
+        }
+
+        footer div {
+            padding-top: 10px;
+            padding-right: 230px;
+        }
+
+        .cpyrt {
+            color: rgb(146, 149, 151)
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="javascript:;" class="logo">
+                <img src="logo4.0.png" alt="QQ邮箱的logo">
+            </a>
+            <div class="nav">
+                <a href="javascript:;" class="option">基本版</a>
+                <span class="line">&nbsp;|&nbsp;</span>
+
+                <a href="javascript:;" class="option">English</a>
+                <span class="line">&nbsp;|&nbsp;</span>
+
+                <a href="javascript:;" class="option">手机版</a>
+                <span class="line">&nbsp;|&nbsp;</span>
+
+                <a href="javascript:;" class="option">企业邮箱</a>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="word">
+            <div class="h1">
+                QQ邮箱，常联系！
+            </div>
+
+            <div id="content">
+                <p>到头来，</p>
+
+                <p>我们记住的，</p>
+
+                <p>不是敌人的攻击，</p>
+
+                <p>而是朋友的沉默</p>
+
+                <p><span>——</span>马丁·路德·金</p>
+
+            </div>
+
+            <div class="from">
+                插画来自丑丑(两岁)
+            </div>
+
+        </div>
+
+        <div class="picture">
+            <img src="页面.png" alt="笑脸">
+        </div>
+
+        <div class="inputframe">
+            <div class="head">
+                <div class="wx">
+                    <a href="javascript:;" class="a">微信登录</a>
+                </div>
+                <div class="qq">
+                    <a href="javascript:;" class="a">QQ登录</a>
+                </div>
+            </div>
+            <form action="" class="input">
+                <input type="text" placeholder="  支持QQ号、邮箱、手机号登录" class="frame1">
+                <br>
+                <input type="password" placeholder="  QQ密码" class="frame2">
+                <br>
+                <a href="javascript:;">
+                    <div class="submit">
+                        <span style="text-decoration: none;">登 录</span>
+                    </div>
+                </a>
+            </form>
+            <div class="option">
+                <input type="checkbox" name="" id="">
+                <span id="boxcaption">下次自动登录</span>
+            </div>
+            <div>
+                <a href="javascript:;" class="scan">⛆ 扫码快捷登录</a>
+            </div>
+            <div class="forget">
+                <a href="javascript:;" style="text-decoration: none;  color:#225592;font-size: x-small;">忘了密码？</a>
+
+            </div>
+
+            <div class="signup">
+                <a href="javaScript:;" style="text-decoration: none;  color:#225592;font-size: x-small;">注册新账号</a>
+            </div>
+
+
+        </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <a href="javascript:;" class="a">关于腾讯</a>
+            <span class="line">&nbsp;|&nbsp;</span>
+            <a href="javascript:;" class="a">服务条款</a>
+            <span class="line">&nbsp;|&nbsp;</span>
+            <a href="javascript:;" class="a">隐私政策</a>
+            <span class="line">&nbsp;|&nbsp;</span>
+            <a href="javascript:;" class="a">客服中心</a>
+            <span class="line">&nbsp;|&nbsp;</span>
+            <a href="javascript:;" class="a">联系我们</a>
+            <span class="line">&nbsp;|&nbsp;</span>
+            <a href="javascript:;" class="a">帮助中心</a>
+            <span class="line">&nbsp;|&nbsp;</span>
+            <span class="cpyrt">©1998 - 2021 Tencent Inc. All Rights Reserved.</span>
+            <div>
+    </footer>
+
+</body>
+
+</html>
